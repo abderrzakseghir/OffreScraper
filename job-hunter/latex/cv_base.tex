@@ -1,0 +1,121 @@
+%% CV LaTeX — Abderrazak Seghir
+%% Template source pour génération automatique par IA
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[margin=1.2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+% Couleurs
+\definecolor{primary}{HTML}{2563EB}
+\definecolor{darktext}{HTML}{1E293B}
+\definecolor{graytext}{HTML}{64748B}
+
+% Styles
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.8em}{0.4em}
+
+\hypersetup{colorlinks=true, linkcolor=primary, urlcolor=primary}
+\setlist[itemize]{leftmargin=1.5em, itemsep=0.1em, parsep=0em}
+\pagestyle{empty}
+
+\begin{document}
+
+% ─────────────────── EN-TÊTE ───────────────────
+\begin{center}
+    {\LARGE\bfseries\color{darktext} Abderrazak Seghir} \\[0.3em]
+    {\large\color{primary} Développeur Full Stack} \\[0.4em]
+    {\small\color{graytext}
+        \faIcon{phone} +33 7 66 72 99 78 \quad
+        \faIcon{envelope} \href{mailto:abderrazakseghir1@gmail.com}{abderrazakseghir1@gmail.com} \quad
+        \faIcon{linkedin} \href{https://www.linkedin.com/in/seghir-abderrazak-248520229/}{LinkedIn} \quad
+        \faIcon{github} \href{https://github.com/abderrzakseghir}{GitHub} \quad
+        \faIcon{map-marker-alt} France
+    }
+\end{center}
+
+\vspace{0.3em}
+
+% ─────────────────── PROFIL ───────────────────
+\section{Profil}
+Développeur Full Stack avec des compétences en .NET, Blazor, et mobile Flutter.
+Actuellement en dernière année de Master~2 MIAGE spécialité SID, je recherche un poste en CDI pour appliquer mes compétences et continuer à apprendre.
+Expérience en gestion de projets et préparation du certificat AWS Certified Cloud Practitioner (CLF-C02).
+
+% ─────────────────── EXPÉRIENCE ───────────────────
+\section{Expérience Professionnelle}
+
+\textbf{Développeur Full Stack -- Alternance} \hfill \textit{2024 -- Présent} \\
+\textbf{Afludia} \hfill France
+\begin{itemize}
+    \item Refonte et migration d'applications internes vers une architecture modulaire et scalable
+    \item Développement de fonctionnalités critiques sur un ERP interne en production
+    \item Optimisation et debugging d'applications existantes (performances, fiabilité)
+    \item Conception d'interfaces web modernes avec Blazor et MudBlazor
+    \item Contribution full-stack en environnement .NET (API, UI, SQL Server)
+    \item Collaboration en équipe Agile (revue de code, amélioration continue)
+\end{itemize}
+
+\vspace{0.3em}
+
+\textbf{Développeur Full Stack -- Stage} \hfill \textit{Avril 2024 -- Juin 2024} \\
+\textbf{Solutions Développement Informatique} \hfill France
+\begin{itemize}
+    \item Développement complet d'une application web (front-end et back-end)
+    \item Intégration du site web dans une application mobile
+    \item Réalisation des tests unitaires
+\end{itemize}
+
+% ─────────────────── PROJETS ───────────────────
+\section{Projets}
+
+\textbf{TRD -- Paris Sportifs (Microservices)} \hfill .NET 10, Blazor, Docker, Kubernetes, RabbitMQ
+\begin{itemize}
+    \item Architecture Microservices avec approche DDD, conteneurisation Docker
+    \item APIs REST performantes et communication asynchrone via RabbitMQ
+\end{itemize}
+
+\textbf{MByte -- Stockage Externe} \hfill S3, WebDAV, Chiffrement
+\begin{itemize}
+    \item Intégration Amazon S3 et WebDAV avec chiffrement des fichiers
+    \item Architecture multi-backend avec redondance et load balancing
+\end{itemize}
+
+\textbf{Esiway -- Application Mobile} \hfill Flutter, Dart, Clean Architecture
+\begin{itemize}
+    \item Application mobile Flutter pour la gestion administrative scolaire
+    \item Implémentation de la Clean Architecture Flutter
+\end{itemize}
+
+% ─────────────────── FORMATION ───────────────────
+\section{Formation}
+
+\textbf{Master MIAGE SID} -- IDMC, Institut des sciences du Digital \hfill \textit{2024 -- 2026} \\
+{\small Systèmes d'information, Business Intelligence, analyse de données, MOA}
+
+\textbf{Licence MIAGE} -- IDMC \hfill \textit{2023 -- 2024} \\
+{\small Informatique et gestion des entreprises}
+
+\textbf{Cycle Ingénieur + Classes Préparatoires} -- ESI, Algérie \hfill \textit{2020 -- 2023} \\
+{\small BDD, Algorithmique, Recherche Opérationnelle, Réseaux, Mathématiques}
+
+% ─────────────────── COMPÉTENCES ───────────────────
+\section{Compétences Techniques}
+
+\textbf{Backend :} .NET, C\#, Blazor, Python, Java, Microservices, RabbitMQ \\
+\textbf{Frontend :} React, JavaScript, TypeScript, MudBlazor, Flutter \\
+\textbf{Bases de données :} PostgreSQL, SQL Server, MongoDB \\
+\textbf{DevOps \& Cloud :} Docker, Kubernetes, AWS, CI/CD, Git \\
+\textbf{Gestion :} Agile/Scrum, Jira, Documentation
+
+% ─────────────────── LANGUES ───────────────────
+\section{Langues}
+Français (courant) \quad | \quad Anglais (professionnel) \quad | \quad Arabe (natif)
+
+\end{document}

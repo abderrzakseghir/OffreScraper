@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environnement
+.env
+.venv/
+venv/
+env/
+
+# Base de données
+db/*.db
+db/*.db-journal
+
+# LaTeX generated
+latex/generated/*.tex
+latex/generated/*.pdf
+latex/generated/*.aux
+latex/generated/*.log
+latex/generated/*.fls
+latex/generated/*.fdb_latexmk
+latex/generated/*.out
+latex/generated/*.synctex.gz
+!latex/generated/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

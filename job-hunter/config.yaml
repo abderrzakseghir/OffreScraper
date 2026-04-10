@@ -1,0 +1,116 @@
+# ============================================================
+# Configuration Job Hunter — Abderrazak Seghir
+# ============================================================
+
+profil:
+  nom: "Abderrazak Seghir"
+  titre: "Développeur Full Stack"
+  statut: "Étudiant en Master 2 MIAGE-SID"
+  objectif: "Recherche un poste en CDI pour mettre en valeur mes compétences et apprendre de nouvelles technologies"
+  description: >
+    Développeur Full Stack avec des compétences en .NET, Blazor, et mobile Flutter.
+    Actuellement en dernière année de Master 2 MIAGE spécialité SID.
+    Expérience en gestion de projets, préparation AWS Certified Cloud Practitioner (CLF-C02).
+
+  competences:
+    - ".NET"
+    - "C#"
+    - "Blazor"
+    - "Microservices"
+    - "Docker"
+    - "PostgreSQL"
+    - "RabbitMQ"
+    - "JavaScript"
+    - "React"
+    - "Flutter"
+    - "Python"
+    - "Java"
+    - "SQL Server"
+    - "Git"
+    - "AWS"
+    - "Agile/Scrum"
+
+  experience:
+    - poste: "Développeur Full Stack - Alternance"
+      entreprise: "Afludia"
+      periode: "2024 - Présent"
+    - poste: "Développeur Full Stack - Stage"
+      entreprise: "Solutions Développement Informatique"
+      periode: "Avril 2024 - Juin 2024"
+
+  formation:
+    - diplome: "Master Miage SID"
+      ecole: "IDMC - Institut des sciences du Digital"
+      periode: "2024 - 2026"
+    - diplome: "Licence Miage"
+      ecole: "IDMC"
+      periode: "2023 - 2024"
+    - diplome: "1ère année Cycle Ingénieur"
+      ecole: "ESI - École nationale supérieure d'informatique (Algérie)"
+      periode: "2022 - 2023"
+
+# Critères de recherche
+recherche:
+  type_contrat: "CDI"
+  localisation:
+    - "France"
+    - "Nancy"
+    - "Paris"
+    - "Lyon"
+    - "Remote"
+  mots_cles:
+    - "développeur full stack"
+    - "développeur .NET"
+    - "développeur backend"
+    - "développeur frontend"
+    - "ingénieur logiciel"
+    - "software engineer"
+    - "full stack developer"
+    - "développeur C#"
+    - "développeur Blazor"
+  mots_cles_exclusion:
+    - "senior"
+    - "lead"
+    - "10 ans"
+    - "architecte"
+
+# URLs cibles à scraper
+sources:
+  - nom: "LinkedIn"
+    url: "https://www.linkedin.com/jobs/search/?keywords=d%C3%A9veloppeur+full+stack&location=France&f_TPR=r604800&f_JT=F"
+    actif: true
+  - nom: "Indeed"
+    url: "https://fr.indeed.com/jobs?q=d%C3%A9veloppeur+full+stack&l=France&sc=0kf%3Ajt%28permanent%29%3B"
+    actif: true
+  - nom: "Welcome to the Jungle"
+    url: "https://www.welcometothejungle.com/fr/jobs?refinementList%5Bcontract_type_names.fr%5D%5B%5D=CDI&query=d%C3%A9veloppeur%20full%20stack"
+    actif: true
+
+# API Claude (Anthropic)
+anthropic:
+  api_key: "${ANTHROPIC_API_KEY}"  # Variable d'environnement
+  model: "claude-sonnet-4-20250514"
+  max_tokens: 4096
+
+# Scraping
+scraping:
+  headless: true
+  delai_min_secondes: 2
+  delai_max_secondes: 5
+  max_pages_par_source: 5
+  user_agents:
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0"
+    - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+# Base de données
+database:
+  type: "sqlite"
+  path: "db/job_hunter.db"
+
+# LaTeX
+latex:
+  cv_base: "latex/cv_base.tex"
+  output_dir: "latex/generated"
+  compiler: "latexmk"
