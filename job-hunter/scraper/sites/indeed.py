@@ -22,14 +22,14 @@ async def crawl_indeed(crawler: Crawler, url: str, max_pages: int = 3) -> list[s
     pages_html = []
     current_url = url
 
-    context = await crawler._stealth.use_async(
-        crawler.browser.new_context(
-            user_agent=crawler._random_user_agent(),
-            viewport={"width": 1920, "height": 1080},
-            locale="fr-FR",
-        )
+    context = await crawler.browser.new_context(
+        user_agent=crawler._random_user_agent(),
+        viewport={"width": 1920, "height": 1080},
+        locale="fr-FR",
     )
     page = await context.new_page()
+    from playwright_stealth import stealth_async
+    await stealth_async(page)
 
     try:
         for i in range(max_pages):

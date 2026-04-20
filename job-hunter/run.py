@@ -107,6 +107,10 @@ def phase2_matching(score_minimum: int = 30):
             logger.info("  → Score %d/100 — Éligible pour CV", score_val)
         else:
             logger.info("  → Score %d/100 — En dessous du seuil", score_val)
+        
+        import time
+        time.sleep(3)  # Anti rate-limit de 3 secondes entre les calls
+
 
     logger.info("Offres scorées : %d", scored)
 
@@ -139,6 +143,9 @@ def phase3_cv_generation(score_minimum: int = 50):
             logger.info("  → CV généré : %s", result.get("pdf_path", ""))
         else:
             logger.warning("  → Échec : %s", result.get("error", ""))
+            
+        import time
+        time.sleep(3)  # Anti rate-limit de 3 secondes entre les calls
 
     logger.info("CVs générés : %d", generated)
 

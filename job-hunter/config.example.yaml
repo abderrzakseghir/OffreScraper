@@ -86,10 +86,10 @@ sources:
     url: "https://www.welcometothejungle.com/fr/jobs?refinementList%5Bcontract_type_names.fr%5D%5B%5D=CDI&query=d%C3%A9veloppeur%20full%20stack"
     actif: true
 
-# API Claude (Anthropic)
-anthropic:
-  api_key: "${ANTHROPIC_API_KEY}"  # Variable d'environnement
-  model: "claude-sonnet-4-20250514"
+# API OpenAI
+openai:
+  api_key: "VOTRE_CLE_API_OPENAI_ICI"
+  model: "gpt-4o-mini"
   max_tokens: 4096
 
 # Scraping

@@ -1,5 +1,5 @@
 """
-Générateur de CV LaTeX — Crée un .tex personnalisé par offre via l'API Claude.
+Générateur de CV LaTeX — Crée un .tex personnalisé par offre via l'API OpenAI.
 Compile ensuite en PDF avec latexmk.
 """
 
@@ -19,12 +19,12 @@ def load_config() -> dict:
 
 
 def _get_api_key(config: dict) -> str:
-    key = config.get("anthropic", {}).get("api_key", "")
+    key = config.get("openai", {}).get("api_key", "")
     if key.startswith("${") and key.endswith("}"):
         env_var = key[2:-1]
         key = os.environ.get(env_var, "")
     if not key:
-        raise ValueError("Clé API Anthropic manquante.")
+        raise ValueError("Clé API OpenAI manquante.")
     return key
 
 
@@ -40,14 +40,14 @@ def generate_cv_latex(offre_titre: str, offre_description: str, offre_entreprise
     Génère un CV .tex personnalisé pour une offre spécifique.
     Retourne le contenu LaTeX généré.
     """
-    import anthropic
+    import openai
 
     config = config or load_config()
     api_key = _get_api_key(config)
-    model = config.get("anthropic", {}).get("model", "claude-sonnet-4-20250514")
-    max_tokens = config.get("anthropic", {}).get("max_tokens", 4096)
+    model = config.get("openai", {}).get("model", "gpt-4o-mini")
+    max_tokens = config.get("openai", {}).get("max_tokens", 4096)
 
-    client = anthropic.Anthropic(api_key=api_key)
+    client = openai.OpenAI(api_key=api_key)
     cv_base = _read_cv_base(config)
 
     conseil = ""
@@ -91,12 +91,12 @@ INSTRUCTIONS :
 """
 
     try:
-        response = client.messages.create(
+        response = client.chat.completions.create(
             model=model,
             max_tokens=max_tokens,
             messages=[{"role": "user", "content": prompt}],
         )
-        tex_content = response.content[0].text.strip()
+        tex_content = response.choices[0].message.content.strip()
         # Nettoyer si wrapped dans des backticks
         if tex_content.startswith("```"):
             tex_content = tex_content.split("\n", 1)[1].rsplit("```", 1)[0].strip()

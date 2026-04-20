@@ -1,6 +1,6 @@
 """
 Matcher IA — Score de correspondance entre le profil candidat et une offre.
-Utilise l'API Claude (Anthropic) pour analyser la pertinence.
+Utilise l'API OpenAI (ChatGPT) pour analyser la pertinence.
 """
 
 import os
@@ -18,14 +18,14 @@ def load_config() -> dict:
 
 
 def _get_api_key(config: dict) -> str:
-    key = config.get("anthropic", {}).get("api_key", "")
+    key = config.get("openai", {}).get("api_key", "")
     if key.startswith("${") and key.endswith("}"):
         env_var = key[2:-1]
         key = os.environ.get(env_var, "")
     if not key:
         raise ValueError(
-            "Clé API Anthropic manquante. "
-            "Définissez la variable d'environnement ANTHROPIC_API_KEY."
+            "Clé API OpenAI manquante. "
+            "Définissez la clé directement ou utilisez OPENAI_API_KEY."
         )
     return key
 
@@ -65,13 +65,13 @@ def score_offre(offre_titre: str, offre_description: str, offre_entreprise: str,
     Calcule un score de matching entre le profil et une offre.
     Retourne un dict avec : score (0-100), justification, competences_matchees, lacunes.
     """
-    import anthropic
+    import openai
 
     config = config or load_config()
     api_key = _get_api_key(config)
-    model = config.get("anthropic", {}).get("model", "claude-sonnet-4-20250514")
+    model = config.get("openai", {}).get("model", "gpt-4o")
 
-    client = anthropic.Anthropic(api_key=api_key)
+    client = openai.OpenAI(api_key=api_key)
 
     profil_prompt = _build_profil_prompt(config)
 
@@ -94,13 +94,13 @@ Réponds UNIQUEMENT au format JSON suivant (pas de markdown, pas de commentaires
 }}"""
 
     try:
-        response = client.messages.create(
+        response = client.chat.completions.create(
             model=model,
             max_tokens=1024,
             messages=[{"role": "user", "content": prompt}],
         )
         import json
-        text = response.content[0].text.strip()
+        text = response.choices[0].message.content.strip()
         # Nettoyer si wrapped dans des backticks
         if text.startswith("```"):
             text = text.split("\n", 1)[1].rsplit("```", 1)[0].strip()

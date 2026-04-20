@@ -9,7 +9,7 @@ import random
 import logging
 from pathlib import Path
 from playwright.async_api import async_playwright, Page, Browser
-from playwright_stealth import Stealth
+from playwright_stealth import stealth_async
 import yaml
 
 logger = logging.getLogger(__name__)
@@ -44,7 +44,6 @@ class Crawler:
 
     async def start(self):
         self._playwright = await async_playwright().start()
-        self._stealth = Stealth()
         self.browser = await self._playwright.chromium.launch(headless=self.headless)
         logger.info("Navigateur lancé (headless=%s)", self.headless)
 
@@ -56,14 +55,13 @@ class Crawler:
 
     async def fetch_page(self, url: str) -> str:
         """Récupère le contenu HTML d'une page avec stealth et délai humain."""
-        context = await self._stealth.use_async(
-            self.browser.new_context(
-                user_agent=self._random_user_agent(),
-                viewport={"width": 1920, "height": 1080},
-                locale="fr-FR",
-            )
+        context = await self.browser.new_context(
+            user_agent=self._random_user_agent(),
+            viewport={"width": 1920, "height": 1080},
+            locale="fr-FR",
         )
         page: Page = await context.new_page()
+        await stealth_async(page)
 
         try:
             logger.info("Navigation vers %s", url)

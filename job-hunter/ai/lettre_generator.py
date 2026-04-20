@@ -1,5 +1,5 @@
 """
-Générateur de lettre de motivation — Crée une lettre personnalisée par offre via Claude.
+Générateur de lettre de motivation — Crée une lettre personnalisée par offre via OpenAI.
 """
 
 import os
@@ -17,12 +17,12 @@ def load_config() -> dict:
 
 
 def _get_api_key(config: dict) -> str:
-    key = config.get("anthropic", {}).get("api_key", "")
+    key = config.get("openai", {}).get("api_key", "")
     if key.startswith("${") and key.endswith("}"):
         env_var = key[2:-1]
         key = os.environ.get(env_var, "")
     if not key:
-        raise ValueError("Clé API Anthropic manquante.")
+        raise ValueError("Clé API OpenAI manquante.")
     return key
 
 
@@ -48,13 +48,13 @@ Expérience :
 def generate_lettre(offre_titre: str, offre_description: str, offre_entreprise: str,
                     score_data: dict | None = None, config: dict | None = None) -> str:
     """Génère une lettre de motivation personnalisée."""
-    import anthropic
+    import openai
 
     config = config or load_config()
     api_key = _get_api_key(config)
-    model = config.get("anthropic", {}).get("model", "claude-sonnet-4-20250514")
+    model = config.get("openai", {}).get("model", "gpt-4o-mini")
 
-    client = anthropic.Anthropic(api_key=api_key)
+    client = openai.OpenAI(api_key=api_key)
     profil = _build_profil_summary(config)
 
     conseil = ""
@@ -87,12 +87,12 @@ INSTRUCTIONS :
 Réponds UNIQUEMENT avec le texte de la lettre, sans commentaires ni balises."""
 
     try:
-        response = client.messages.create(
+        response = client.chat.completions.create(
             model=model,
             max_tokens=2048,
             messages=[{"role": "user", "content": prompt}],
         )
-        lettre = response.content[0].text.strip()
+        lettre = response.choices[0].message.content.strip()
         logger.info("Lettre générée pour '%s' (%d chars)", offre_titre, len(lettre))
         return lettre
     except Exception as e:
