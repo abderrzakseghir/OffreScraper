@@ -381,6 +381,7 @@ def index():
         last_scrape=settings.get("last_scrape", ""),
         last_scrape_params=settings.get("last_scrape_params", {}),
         scrape_state=_get_scrape_state(sid),
+        is_vercel=bool(os.environ.get("VERCEL")),
     ))
     return _set_session_cookie(resp, sid)
 
@@ -810,6 +811,20 @@ def api_clear_storage():
 def api_scrape():
     sid = _get_session_id()
     data = request.get_json() or {}
+
+    # Scraping not available on Vercel (no browser runtime)
+    if os.environ.get("VERCEL"):
+        # Still allow saving schedule
+        if data.get("save_schedule_only"):
+            settings = get_user_settings(sid)
+            settings.setdefault("last_scrape_params", {})["schedule_hours"] = int(data.get("schedule_hours", 0))
+            save_user_settings(sid, settings)
+            resp = make_response(jsonify({"success": True}))
+            return _set_session_cookie(resp, sid)
+        return jsonify({
+            "error": "Le scraping n'est pas disponible sur Vercel (Playwright nécessite un navigateur). "
+                     "Lancez le scraping en local avec `python api/index.py` puis importez vos offres via le bouton 📥 Importer."
+        }), 400
 
     # Save schedule only (no actual scraping)
     if data.get("save_schedule_only"):

@@ -391,6 +391,13 @@
         </div>
         <div class="scraping-panel-body {% if scrape_state.running %}open{% endif %}" id="scrapePanelBody">
 
+            {% if is_vercel %}
+            <div style="background:#1c1917;border:1px solid #78350f;border-radius:0.5rem;padding:0.85rem 1rem;margin-bottom:1rem;color:#fbbf24;font-size:0.875rem;line-height:1.5;">
+                ⚠️ <strong>Scraping non disponible sur Vercel</strong> — Playwright nécessite un navigateur qui ne peut pas tourner en environnement serverless.<br>
+                <span style="color:#a8a29e;">Lancez le scraping en local (<code style="color:#fde68a;">python api/index.py</code>), puis utilisez le bouton <strong>📥 Importer</strong> pour transférer vos offres.</span>
+            </div>
+            {% endif %}
+
             <div class="scrape-options">
                 <!-- Fraîcheur -->
                 <div class="scrape-option-group">
