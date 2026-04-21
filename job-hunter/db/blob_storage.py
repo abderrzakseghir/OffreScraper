@@ -18,7 +18,11 @@ try:
 except ImportError:
     VERCEL_BLOB_AVAILABLE = False
 
-LOCAL_STORAGE_DIR = os.path.join(os.path.dirname(__file__), "..", "_local_blob")
+LOCAL_STORAGE_DIR = (
+    "/tmp/_local_blob"
+    if os.environ.get("VERCEL")
+    else os.path.join(os.path.dirname(__file__), "..", "_local_blob")
+)
 
 
 def _ensure_local_dir():
