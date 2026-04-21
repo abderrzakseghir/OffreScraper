@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  job-hunter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: job-hunter
+    ports:
+      - "5000:5000"
+    volumes:
+      # Persistance des données entre redémarrages
+      - job_hunter_data:/app/job-hunter/_local_blob
+      # Montage de la config locale (éditable sans rebuild)
+      - ./job-hunter/config.yaml:/app/job-hunter/config.yaml:ro
+      # Montage des codes d'accès (éditable sans rebuild)
+      - ./job-hunter/codes.json:/app/job-hunter/codes.json
+    environment:
+      - FLASK_SECRET_KEY=${FLASK_SECRET_KEY:-change-me-in-production}
+      - PORT=5000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/login"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  job_hunter_data:
