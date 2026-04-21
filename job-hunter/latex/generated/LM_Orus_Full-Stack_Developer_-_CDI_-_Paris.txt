@@ -1,0 +1,27 @@
+Abderrazak Seghir  
+[Votre adresse]  
+[Votre téléphone]  
+[Votre email]  
+[Date]  
+
+À l’attention de l’équipe de recrutement  
+Orus  
+[Adresse de l'entreprise]  
+
+Objet : Candidature pour le poste de Full-Stack Developer
+
+Madame, Monsieur,
+
+Je suis actuellement étudiant en Master 2 MIAGE-SID et je souhaite vous adresser ma candidature pour le poste de Full-Stack Developer au sein de votre entreprise, Orus. La mission d'Orus, qui vise à simplifier et humaniser l'assurance professionnelle, résonne particulièrement avec mes valeurs et ma passion pour le développement technologique au service user-centric.
+
+Au cours de mes expériences professionnelles, j'ai eu l'opportunité de travailler comme Développeur Full Stack en alternance chez Afludia et en stage chez Solutions Développement Informatique. Ces expériences m'ont permis de me familiariser avec une multitude d'outils et de technologies tels que .NET, C#, JavaScript et React. En particulier, chez Afludia, j'ai contribué à la conception et au développement de fonctionnalités critiques, ce qui m’a permis d’acquérir une solide expertise dans la gestion de projets de bout en bout, en étroite collaboration avec des équipes pluridisciplinaires.
+
+Ce que j'apprécie particulièrement chez Orus, c'est votre approche collaborative et votre volonté d'améliorer constamment les outils et processus, éléments que j'ai pu mettre en pratique durant mes expériences, notamment à travers des séances de pair programming. Je suis également attiré par votre environnement bienveillant et flexible, qui encourage l'apprentissage continu et l'implication active de chaque membre de l'équipe.
+
+Mon désir de rejoindre Orus est motivé par votre vision d'une assurance plus accessible et efficace. Je suis convaincu que mes compétences techniques et mon esprit d'équipe seraient un atout précieux pour contribuer au développement de votre produit innovant tout en travaillant en étroite collaboration avec votre équipe Senior.
+
+Je serais ravi de discuter plus amplement de ma candidature et de la valeur que je pourrais apporter à Orus. Je vous remercie pour l’attention portée à ma candidature et j'espère avoir l'opportunité de rejoindre votre équipe ambitieuse.
+
+Cordialement,
+
+Abderrazak Seghir

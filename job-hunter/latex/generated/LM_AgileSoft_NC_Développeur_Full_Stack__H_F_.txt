@@ -1,0 +1,21 @@
+Abderrazak Seghir  
+[Votre adresse]  
+[Votre téléphone]  
+[Votre e-mail]  
+[Date]  
+
+Monsieur ou Madame,
+
+Je suis actuellement étudiant en Master 2 MIAGE-SID et je souhaite vous soumettre ma candidature pour le poste de Développeur Full Stack au sein d'AgileSoft.NC. Passionné par le développement et fort d'une formation solide, je suis convaincu que mes compétences techniques et mon expérience en alternance font de moi un candidat idéal pour rejoindre votre équipe.
+
+Au cours de mon alternance chez Afludia, j'ai eu l'opportunité de travailler sur des projets variés, me permettant de renforcer mes compétences en .NET, C# et React. J’y ai développé des applications web en utilisant Blazor et Docker, contribuant ainsi à la mise en place de microservices efficaces. Mes expériences antérieures en stage chez Solutions Développement Informatique m'ont également permis de me familiariser avec les bases de données telles que PostgreSQL et SQL Server, ainsi qu'avec RabbitMQ pour la gestion des messages. Ces expériences m'ont appris à évoluer dans un environnement Agile/Scrum, favorisant la collaboration et l'innovation.
+
+Je suis particulièrement attiré par AgileSoft.NC en raison de votre engagement envers l'excellence technique et l'innovation dans le domaine du développement logiciel. Je partage votre vision d'intégrer des solutions performantes et adaptables pour répondre aux besoins de vos clients. La possibilité de travailler dans un cadre qui valorise l'épanouissement professionnel et le travail d'équipe, tout en ayant l'opportunité de contribuer à des projets ambitieux, me motive profondément.
+
+Je suis prêt à relever les défis qui se présenteront et à apporter ma créativité et mon savoir-faire à votre équipe. Je serais ravi de pouvoir discuter plus en détail de mes motivations et de mes projets futurs lors d'un entretien. 
+
+Je vous remercie pour votre attention et j'espère avoir l'opportunité de collaborer avec AgileSoft.NC.
+
+Cordialement,
+
+Abderrazak Seghir

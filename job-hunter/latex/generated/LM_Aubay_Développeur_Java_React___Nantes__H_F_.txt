@@ -1,0 +1,24 @@
+Abderrazak Seghir  
+[Adresse]  
+[Téléphone]  
+[Email]  
+[Date]  
+
+Aubay  
+[Adresse de l'entreprise]  
+
+Objet : Candidature au poste de Développeur Java React – Nantes (H/F)  
+
+Madame, Monsieur,  
+
+Passionné par le développement d'applications innovantes et performantes, je suis actuellement étudiant en Master 2 MIAGE-SID et je souhaite rejoindre Aubay en tant que Développeur Java React. Mon expérience en tant que Développeur Full Stack en alternance chez Afludia et lors de mon stage chez Solutions Développement Informatique m’a permis d’acquérir des compétences solides dans les technologies web modernes, notamment en Java et React.  
+
+Au cours de mes expériences, j’ai imaginé et développé des solutions applicatives en .NET et en utilisant des frameworks tels que Blazor et React. J'ai également eu l'occasion de travailler avec Docker et des architectures de microservices, ce qui m’a permis d’optimiser la lisibilité et la capacité d’évolution des applications. Je suis également familiarisé avec les méthodologies Agile/Scrum, participant à des revues de code et à des ateliers de conception qui renforcent la collaboration au sein de l'équipe.  
+
+Je suis particulièrement attiré par Aubay en raison de son engagement envers l'expertise et l'innovation, ainsi que de sa culture d'entreprise axée sur le bien-être et le développement des compétences. J’apprécie l’attention portée à la qualité du code et aux pratiques de Clean Code, deux aspects que je considère fondamentaux pour créer des applications pérennes. De plus, la possibilité de travailler dans un environnement bancaire international, en contribuant à la gestion et la relation client, m'enthousiasme particulièrement.  
+
+Je suis convaincu que mon bagage technique, associé à ma curiosité et ma capacité d’adaptation, correspond aux attentes pour ce poste. Je serais ravi de pouvoir échanger sur mes expériences et ma vision du développement au sein de votre équipe.  
+
+Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.  
+
+Abderrazak Seghir

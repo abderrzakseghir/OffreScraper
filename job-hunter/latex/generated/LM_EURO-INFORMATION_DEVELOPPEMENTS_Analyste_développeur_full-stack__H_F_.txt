@@ -1,0 +1,27 @@
+Abderrazak Seghir  
+[Votre adresse]  
+[Votre téléphone]  
+[Votre email]  
+[Date]  
+
+Service de Recrutement  
+EURO-INFORMATION DEVELOPPEMENTS  
+67000 Strasbourg  
+
+Objet : Candidature au poste d’Analyste Développeur Full-Stack
+
+Madame, Monsieur,
+
+Actuellement étudiant en Master 2 MIAGE-SID et fort d'une expérience en tant que Développeur Full Stack en alternance chez Afludia, je suis particulièrement intéressé par l'opportunité de contribuer à votre équipe dynamique chez EURO-INFORMATION DEVELOPPEMENTS. Votre engagement envers l'innovation et la qualité dans le domaine du développement logiciel résonne avec mes aspirations professionnelles et mes valeurs personnelles.
+
+Au cours de mes expériences, j'ai acquis des compétences solides en .NET, C#, JavaScript et React, qui correspondent parfaitement aux exigences du poste que vous proposez. Lors de mon alternance, j'ai eu l'occasion de travailler sur des projets variés, intégrant des microservices et des technologies telles que Docker et RabbitMQ, ce qui m’a permis de m’habituer aux méthodologies Agile/Scrum et à un environnement collaboratif. Mon stage chez Solutions Développement Informatique m’a également permis de renforcer mes compétences en SQL Server et PostgreSQL, ajoutant de la valeur à mes connaissances en gestion de bases de données.
+
+Passionné par le développement et l’amélioration continue, je suis convaincu que mon engagement et ma capacité d'adaptation seraient des atouts pour votre équipe. Je suis particulièrement attiré par votre approche centrée sur le client et la recherche constante de solutions optimales, ce qui correspond à ma volonté de créer des applications s'inscrivant dans une démarche d'efficacité et d'innovation.
+
+Enthousiaste à l'idée de rejoindre EURO-INFORMATION DEVELOPPEMENTS, je suis impatient de pouvoir contribuer à vos projets et de mettre à profit mes compétences pour le développement d’applications performantes. Je serais ravi de discuter plus en détail de ma candidature lors d'un entretien.
+
+Je vous remercie de l'attention portée à ma candidature et reste à votre disposition pour toute information complémentaire.
+
+Cordialement,
+
+Abderrazak Seghir

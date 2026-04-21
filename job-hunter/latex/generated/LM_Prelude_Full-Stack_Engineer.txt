@@ -1,0 +1,25 @@
+Abderrazak Seghir  
+[Votre Adresse]  
+[Votre Email]  
+[Votre Numéro de Téléphone]  
+[Date]  
+
+À l’attention de l’équipe de recrutement  
+Prelude  
+[Adresse de l’entreprise]  
+
+Objet : Candidature au poste de Full-Stack Engineer  
+
+Madame, Monsieur,
+
+Passionné par l’innovation technologique et désireux de contribuer à des projets qui transforment l’expérience utilisateur, je me permets de vous adresser ma candidature pour le poste de Full-Stack Engineer au sein de Prelude. Votre mission de redéfinir l'authentification et l'onboarding des utilisateurs résonne particulièrement avec mes valeurs professionnelles, et je suis enthousiasmé par l'idée de participer à une aventure où la qualité et la rapidité priment.
+
+Actuellement étudiant en Master 2 MIAGE-SID, j'ai eu l'opportunité d'affiner mes compétences en tant que Développeur Full Stack lors de mon alternance chez Afludia. J'y ai développé des applications en utilisant des technologies telles que .NET, C# et React, en suivant la méthodologie Agile/Scrum. Au cours de mon stage chez Solutions Développement Informatique, j'ai également appris à travailler avec Docker et à gérer des bases de données PostgreSQL, ce qui m'a permis de renforcer ma compréhension des systèmes distribués. Ces expériences m'ont permis de devenir à l'aise avec l'ensemble du cycle de vie du développement, de la conception à la mise en production.
+
+Je suis particulièrement attiré par votre approche axée sur la collaboration et la performance, et je partage votre conviction que de petites équipes agiles peuvent avoir un impact significatif. La combinaison de la création d'interfaces utilisateur performantes et de la mise en place de systèmes backend robustes, notamment avec des technologies comme Go et Typescript, correspond parfaitement à mes aspirations professionnelles. J'apprécie également votre engagement envers une communication directe avec les clients, qui est essentielle pour un développement produit centré sur les besoins réels des utilisateurs.
+
+Je suis impatient de discuter de la manière dont mes compétences et mon enthousiasme pourraient contribuer à l’évolution de Prelude et de ses produits. Je vous remercie pour votre attention et espère avoir l'opportunité de participer à cette aventure passionnante.
+
+Cordialement,
+
+Abderrazak Seghir

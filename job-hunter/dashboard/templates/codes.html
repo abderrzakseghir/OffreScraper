@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Hunter — Gestion des codes d'accès</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: #0f172a;
+            color: #e2e8f0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: #1e293b;
+            border-bottom: 1px solid #334155;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .header h1 { font-size: 1.1rem; font-weight: 700; color: #f8fafc; }
+        .header-actions { display: flex; gap: 0.75rem; align-items: center; }
+        .back-link {
+            color: #6366f1;
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        .content { max-width: 720px; margin: 2rem auto; padding: 0 1.5rem; }
+
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .card h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #f8fafc;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        /* Codes table */
+        .codes-table { width: 100%; border-collapse: collapse; }
+        .codes-table th {
+            text-align: left;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #64748b;
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid #334155;
+        }
+        .codes-table td {
+            padding: 0.65rem 0.75rem;
+            border-bottom: 1px solid #1e293b;
+            font-size: 0.875rem;
+            vertical-align: middle;
+        }
+        .codes-table tr:last-child td { border-bottom: none; }
+        .codes-table tr:hover td { background: #0f172a; }
+
+        .code-badge {
+            font-family: 'Courier New', monospace;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #a5f3fc;
+            letter-spacing: 0.1em;
+            background: #0c2030;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            border: 1px solid #164e63;
+        }
+
+        .btn { display: inline-flex; align-items: center; gap: 0.4rem; border: 1px solid #475569; background: #334155; color: #e2e8f0; border-radius: 0.375rem; padding: 0.4rem 0.75rem; font-size: 0.8rem; font-weight: 500; cursor: pointer; text-decoration: none; transition: background 0.15s; }
+        .btn:hover { background: #475569; }
+        .btn-primary { background: #4f46e5; border-color: #6366f1; color: white; }
+        .btn-primary:hover { background: #6366f1; }
+        .btn-danger { background: #7f1d1d; border-color: #991b1b; color: #f87171; }
+        .btn-danger:hover { background: #991b1b; }
+
+        /* Add form */
+        .add-form { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: flex-end; }
+        .form-group { display: flex; flex-direction: column; gap: 0.4rem; flex: 1; min-width: 140px; }
+        .form-group label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #94a3b8; }
+        .form-group input {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 0.5rem;
+            padding: 0.6rem 0.75rem;
+            color: #f1f5f9;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus { border-color: #6366f1; box-shadow: 0 0 0 2px rgba(99,102,241,0.2); }
+        .form-group input[name="code"] {
+            font-family: 'Courier New', monospace;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .banner {
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            font-size: 0.875rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .banner.success { background: #052e16; border: 1px solid #166534; color: #86efac; }
+        .banner.error   { background: #450a0a; border: 1px solid #991b1b; color: #f87171; }
+
+        .empty { color: #475569; font-style: italic; font-size: 0.875rem; padding: 0.75rem 0; }
+
+        @media (max-width: 600px) {
+            .header { padding: 1rem; }
+            .content { padding: 0 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔑 Gestion des codes d'accès</h1>
+        <div class="header-actions">
+            <a href="/" class="back-link">← Tableau de bord</a>
+            <a href="/logout" class="back-link" style="color:#94a3b8;">🔓 Déconnexion</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        {% if message %}
+        <div class="banner {{ message_type }}">
+            <span>{{ '✅' if message_type == 'success' else '⛔' }}</span>
+            <span>{{ message }}</span>
+        </div>
+        {% endif %}
+
+        <!-- Add a new code -->
+        <div class="card">
+            <h3>➕ Ajouter un nouveau code</h3>
+            <form method="POST" action="/codes/add" class="add-form" novalidate>
+                <div class="form-group">
+                    <label for="new_code">Code d'accès</label>
+                    <input type="text" id="new_code" name="code" placeholder="EX: MON-CODE-01" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="new_label">Libellé (facultatif)</label>
+                    <input type="text" id="new_label" name="label" placeholder="Ex: Alice Dupont">
+                </div>
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+            </form>
+            <p style="color:#475569;font-size:0.78rem;margin-top:0.75rem;">
+                Le code est insensible à la casse. Il sera automatiquement mis en majuscules.
+            </p>
+        </div>
+
+        <!-- Existing codes -->
+        <div class="card">
+            <h3>📋 Codes existants ({{ codes|length }})</h3>
+
+            {% if codes %}
+            <table class="codes-table">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Libellé</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for code, label in codes.items() %}
+                    <tr>
+                        <td><span class="code-badge">{{ code }}</span></td>
+                        <td style="color:#94a3b8;">{{ label or '—' }}</td>
+                        <td>
+                            <form method="POST" action="/codes/delete" style="display:inline;" onsubmit="return confirm('Supprimer le code {{ code }} ? Les données de cet utilisateur seront conservées.')">
+                                <input type="hidden" name="code" value="{{ code }}">
+                                <button type="submit" class="btn btn-danger">🗑️ Supprimer</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p class="empty">Aucun code défini. Ajoutez-en un ci-dessus.</p>
+            {% endif %}
+        </div>
+
+        <p style="color:#334155;font-size:0.78rem;text-align:center;">
+            Les codes sont stockés dans <code style="color:#64748b;">codes.json</code> à la racine du projet.
+            Chaque code donne accès à un espace de données isolé et persistant.
+        </p>
+    </div>
+
+    <script>
+        // Auto-uppercase the code input as the user types
+        document.getElementById('new_code').addEventListener('input', function() {
+            const pos = this.selectionStart;
+            this.value = this.value.toUpperCase();
+            this.setSelectionRange(pos, pos);
+        });
+    </script>
+</body>
+</html>

@@ -6,14 +6,12 @@
     <title>{{ offre.titre }} — Job Hunter</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: #0f172a;
             color: #e2e8f0;
             min-height: 100vh;
         }
-
         .header {
             background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
             border-bottom: 1px solid #334155;
@@ -22,14 +20,11 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .header h1 { font-size: 1.5rem; color: #f8fafc; }
         .back-link { color: #94a3b8; font-size: 0.9rem; }
         .back-link:hover { color: #60a5fa; }
-
         a { color: #60a5fa; text-decoration: none; }
         a:hover { text-decoration: underline; }
-
         .content { max-width: 900px; margin: 0 auto; padding: 2rem; }
 
         .offre-header {
@@ -39,30 +34,13 @@
             padding: 1.5rem;
             margin-bottom: 1.5rem;
         }
-
-        .offre-header h2 {
-            font-size: 1.4rem;
-            color: #f8fafc;
-            margin-bottom: 0.5rem;
-        }
-
+        .offre-header h2 { font-size: 1.4rem; color: #f8fafc; margin-bottom: 0.5rem; }
         .offre-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            color: #94a3b8;
-            font-size: 0.875rem;
-            margin-bottom: 1rem;
+            display: flex; flex-wrap: wrap; gap: 1rem;
+            color: #94a3b8; font-size: 0.875rem; margin-bottom: 1rem;
         }
-
         .offre-meta span { display: flex; align-items: center; gap: 0.3rem; }
-
-        .offre-actions {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-            align-items: center;
-        }
+        .offre-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
 
         .btn {
             display: inline-block;
@@ -75,16 +53,21 @@
             cursor: pointer;
             text-decoration: none;
         }
-
         .btn:hover { background: #2563eb; text-decoration: none; }
         .btn-green { background: #059669; }
         .btn-green:hover { background: #047857; }
+        .btn-orange { background: #d97706; }
+        .btn-orange:hover { background: #b45309; }
+        .btn-purple { background: #7c3aed; }
+        .btn-purple:hover { background: #6d28d9; }
         .btn-outline {
             background: transparent;
             border: 1px solid #475569;
             color: #94a3b8;
         }
         .btn-outline:hover { border-color: #60a5fa; color: #60a5fa; background: transparent; }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn-lg { padding: 0.75rem 2rem; font-size: 1rem; }
 
         .card {
             background: #1e293b;
@@ -93,82 +76,112 @@
             padding: 1.5rem;
             margin-bottom: 1.5rem;
         }
-
         .card h3 {
-            color: #f8fafc;
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #334155;
+            color: #f8fafc; font-size: 1rem; margin-bottom: 1rem;
+            padding-bottom: 0.5rem; border-bottom: 1px solid #334155;
         }
-
         .card p { line-height: 1.7; color: #cbd5e1; }
         .card pre {
-            white-space: pre-wrap;
-            font-family: inherit;
-            line-height: 1.7;
-            color: #cbd5e1;
+            white-space: pre-wrap; font-family: inherit;
+            line-height: 1.7; color: #cbd5e1;
         }
 
-        .score-display {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
+        .score-display { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
         .score-circle {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            flex-shrink: 0;
+            width: 80px; height: 80px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem; font-weight: 700; flex-shrink: 0;
         }
-
         .score-circle.high { background: #064e3b; color: #34d399; border: 3px solid #34d399; }
         .score-circle.mid { background: #713f12; color: #fbbf24; border: 3px solid #fbbf24; }
         .score-circle.low { background: #7f1d1d; color: #f87171; border: 3px solid #f87171; }
 
-        .tags-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 0.75rem;
-        }
-
-        .tag {
-            padding: 0.25rem 0.75rem;
-            border-radius: 0.375rem;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
+        .tags-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+        .tag { padding: 0.25rem 0.75rem; border-radius: 0.375rem; font-size: 0.8rem; font-weight: 500; }
         .tag-green { background: #064e3b; color: #34d399; }
         .tag-red { background: #7f1d1d; color: #f87171; }
         .tag-blue { background: #1e3a5f; color: #60a5fa; }
 
         .section-label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: #94a3b8;
-            margin-bottom: 0.5rem;
-            margin-top: 1rem;
+            font-size: 0.75rem; text-transform: uppercase;
+            letter-spacing: 0.05em; color: #94a3b8;
+            margin-bottom: 0.5rem; margin-top: 1rem;
         }
 
         .statut-select {
-            background: #0f172a;
-            color: #e2e8f0;
-            border: 1px solid #475569;
-            border-radius: 0.375rem;
-            padding: 0.4rem 0.6rem;
-            font-size: 0.85rem;
-            cursor: pointer;
+            background: #0f172a; color: #e2e8f0;
+            border: 1px solid #475569; border-radius: 0.375rem;
+            padding: 0.4rem 0.6rem; font-size: 0.85rem; cursor: pointer;
         }
+
+        .screen-section {
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .latex-block {
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            position: relative;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .latex-block code {
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.8rem;
+            color: #a5f3fc;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: #334155;
+            color: #94a3b8;
+            border: 1px solid #475569;
+            padding: 0.3rem 0.6rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            font-size: 0.75rem;
+        }
+        .copy-btn:hover { background: #475569; color: #e2e8f0; }
+
+        .loading {
+            display: inline-block;
+            width: 18px; height: 18px;
+            border: 2px solid #475569;
+            border-top-color: #60a5fa;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            vertical-align: middle;
+            margin-left: 0.5rem;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .error-msg {
+            background: #7f1d1d;
+            border: 1px solid #f87171;
+            color: #fca5a5;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        .no-api-warning {
+            background: #713f12;
+            border: 1px solid #fbbf24;
+            color: #fde68a;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;
+        }
+        .no-api-warning a { color: #fbbf24; }
     </style>
 </head>
 <body>
@@ -178,13 +191,20 @@
     </div>
 
     <div class="content">
+
+        {% if not has_api_key %}
+        <div class="no-api-warning">
+            ⚠️ Aucune clé API configurée. <a href="/settings">Configurez vos paramètres</a> pour utiliser les fonctionnalités IA.
+        </div>
+        {% endif %}
+
         <!-- Offre Header -->
         <div class="offre-header">
             <h2>{{ offre.titre or 'Sans titre' }}</h2>
             <div class="offre-meta">
                 <span>{{ offre.entreprise or 'Entreprise inconnue' }}</span>
                 {% if offre.localisation %}
-                <span>{{ offre.localisation }}</span>
+                <span>📍 {{ offre.localisation }}</span>
                 {% endif %}
                 <span>{{ offre.source }}</span>
                 {% if offre.date_publication %}
@@ -195,14 +215,25 @@
                 {% if offre.url %}
                 <a href="{{ offre.url }}" target="_blank" rel="noopener noreferrer" class="btn">Voir l'offre originale</a>
                 {% endif %}
-                {% if cv and cv.pdf_path %}
-                <a href="/cv/{{ offre.id }}" class="btn btn-green">Telecharger le CV personnalise</a>
-                {% endif %}
-                <select class="statut-select" onchange="updateStatut({{ offre.id }}, this.value)">
+                <select class="statut-select" onchange="updateStatut('{{ offre.id }}', this.value)">
                     {% for s in ['nouveau', 'vu', 'postulé', 'entretien', 'refusé'] %}
                     <option value="{{ s }}" {% if offre.statut == s %}selected{% endif %}>{{ s|capitalize }}</option>
                     {% endfor %}
                 </select>
+            </div>
+        </div>
+
+        <!-- Screen Button -->
+        <div class="card">
+            <div class="screen-section">
+                <button id="screenBtn" class="btn btn-orange btn-lg" onclick="screenOffre()"
+                    {% if not has_api_key %}disabled title="Configurez d'abord votre clé API"{% endif %}>
+                    🔍 Screener cette offre
+                </button>
+                <p style="color: #64748b; font-size: 0.8rem; margin-top: 0.5rem;">
+                    Lance l'analyse IA pour évaluer votre compatibilité avec cette offre
+                </p>
+                <div id="screenError"></div>
             </div>
         </div>
 
@@ -213,67 +244,6 @@
             <pre>{{ offre.description }}</pre>
             {% else %}
             <p style="color: #64748b; font-style: italic;">Description non disponible. Cliquez sur "Voir l'offre originale" pour la consulter.</p>
-            {% endif %}
-        </div>
-
-        <!-- Score IA -->
-        {% if score %}
-        <div class="card">
-            <h3>Analyse IA — Score de matching</h3>
-
-            <div class="score-display">
-                <div class="score-circle {% if score.score >= 70 %}high{% elif score.score >= 40 %}mid{% else %}low{% endif %}">
-                    {{ score.score }}
-                </div>
-                <div>
-                    <p>{{ score.justification }}</p>
-                </div>
-            </div>
-
-            {% if score.competences_matchees %}
-            <div class="section-label">Competences matchees</div>
-            <div class="tags-list">
-                {% for comp in score.competences_matchees.split(',') if comp.strip() %}
-                <span class="tag tag-green">{{ comp.strip() }}</span>
-                {% endfor %}
-            </div>
-            {% endif %}
-
-            {% if score.lacunes %}
-            <div class="section-label">Lacunes identifiees</div>
-            <div class="tags-list">
-                {% for lac in score.lacunes.split(',') if lac.strip() %}
-                <span class="tag tag-red">{{ lac.strip() }}</span>
-                {% endfor %}
-            </div>
-            {% endif %}
-
-            {% if score.conseil %}
-            <div class="section-label">Conseil pour candidater</div>
-            <p style="margin-top: 0.5rem; padding: 0.75rem; background: #0f172a; border-radius: 0.5rem; border-left: 3px solid #60a5fa;">
-                {{ score.conseil }}
-            </p>
-            {% endif %}
-        </div>
-        {% else %}
-        <div class="card">
-            <h3>Analyse IA</h3>
-            <p style="color: #64748b;">Pas encore scoree. Lancez <code style="color: #60a5fa;">python run.py match</code></p>
-        </div>
-        {% endif %}
-
-        <!-- CV -->
-        <div class="card">
-            <h3>CV personnalise</h3>
-            {% if cv and cv.pdf_path %}
-            <p>CV genere le {{ cv.date_generation[:10] if cv.date_generation else '—' }}</p>
-            <div style="margin-top: 1rem;">
-                <a href="/cv/{{ offre.id }}" class="btn btn-green">Telecharger PDF</a>
-            </div>
-            {% elif score and score.score >= 50 %}
-            <p style="color: #64748b;">Score suffisant pour un CV. Lancez <code style="color: #60a5fa;">python run.py cv</code></p>
-            {% else %}
-            <p style="color: #64748b;">CV non genere (score insuffisant ou pas encore scoree)</p>
             {% endif %}
         </div>
 
@@ -288,20 +258,198 @@
             </div>
         </div>
         {% endif %}
+
+        <!-- Score IA -->
+        <div class="card" id="scoreCard">
+            <h3>Analyse IA — Score de matching</h3>
+            {% if score %}
+            <div class="score-display">
+                <div class="score-circle {% if score.score >= 70 %}high{% elif score.score >= 40 %}mid{% else %}low{% endif %}">
+                    {{ score.score }}
+                </div>
+                <div>
+                    <p>{{ score.justification }}</p>
+                </div>
+            </div>
+
+            {% if score.competences_matchees %}
+            <div class="section-label">Compétences matchées</div>
+            <div class="tags-list">
+                {% for comp in score.competences_matchees.split(',') if comp.strip() %}
+                <span class="tag tag-green">{{ comp.strip() }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if score.lacunes %}
+            <div class="section-label">Lacunes identifiées</div>
+            <div class="tags-list">
+                {% for lac in score.lacunes.split(',') if lac.strip() %}
+                <span class="tag tag-red">{{ lac.strip() }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if score.conseil %}
+            <div class="section-label">Conseil pour candidater</div>
+            <p style="margin-top: 0.5rem; padding: 0.75rem; background: #0f172a; border-radius: 0.5rem; border-left: 3px solid #60a5fa;">
+                {{ score.conseil }}
+            </p>
+            {% endif %}
+            {% else %}
+            <p id="scoreEmpty" style="color: #64748b;">Pas encore analysée. Cliquez sur "Screener cette offre" pour lancer l'analyse.</p>
+            {% endif %}
+        </div>
+
+        <!-- CV Section -->
+        <div class="card" id="cvCard">
+            <h3>📄 CV personnalisé</h3>
+            {% if cv and cv.tex %}
+            <p style="color: #34d399; margin-bottom: 0.5rem;">CV généré le {{ cv.date_generation[:10] if cv.date_generation else '—' }}</p>
+            <div class="latex-block">
+                <button class="copy-btn" onclick="copyLatex('cvLatex')">📋 Copier</button>
+                <code id="cvLatex">{{ cv.tex }}</code>
+            </div>
+            {% else %}
+            <div style="text-align: center;">
+                <button id="cvBtn" class="btn btn-green" onclick="generateCV()"
+                    {% if not has_api_key %}disabled{% endif %}>
+                    Générer CV
+                </button>
+                <p style="color: #64748b; font-size: 0.8rem; margin-top: 0.5rem;">
+                    Génère un CV LaTeX personnalisé pour cette offre
+                </p>
+                <div id="cvResult"></div>
+                <div id="cvError"></div>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Lettre de motivation Section -->
+        <div class="card" id="lettreCard">
+            <h3>✉️ Lettre de motivation</h3>
+            {% if lettre and lettre.tex %}
+            <p style="color: #34d399; margin-bottom: 0.5rem;">Lettre générée le {{ lettre.date_generation[:10] if lettre.date_generation else '—' }}</p>
+            <div class="latex-block">
+                <button class="copy-btn" onclick="copyLatex('lettreLatex')">📋 Copier</button>
+                <code id="lettreLatex">{{ lettre.tex }}</code>
+            </div>
+            {% else %}
+            <div style="text-align: center;">
+                <button id="lettreBtn" class="btn btn-purple" onclick="generateLettre()"
+                    {% if not has_api_key %}disabled{% endif %}>
+                    Générer Lettre de Motivation
+                </button>
+                <p style="color: #64748b; font-size: 0.8rem; margin-top: 0.5rem;">
+                    Génère une lettre de motivation LaTeX personnalisée pour cette offre
+                </p>
+                <div id="lettreResult"></div>
+                <div id="lettreError"></div>
+            </div>
+            {% endif %}
+        </div>
+
     </div>
 
     <script>
-        async function updateStatut(offreId, statut) {
+        const offreId = "{{ offre.id }}";
+
+        async function updateStatut(id, statut) {
             try {
-                const resp = await fetch('/api/offre/' + offreId + '/statut', {
+                const resp = await fetch('/api/offre/' + id + '/statut', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ statut }),
                 });
-                if (!resp.ok) alert('Erreur lors de la mise a jour');
+                if (!resp.ok) alert('Erreur lors de la mise à jour du statut');
             } catch (e) {
-                alert('Erreur reseau');
+                alert('Erreur réseau');
             }
+        }
+
+        async function screenOffre() {
+            const btn = document.getElementById('screenBtn');
+            const errDiv = document.getElementById('screenError');
+            btn.disabled = true;
+            btn.innerHTML = '🔍 Analyse en cours... <span class="loading"></span>';
+            errDiv.innerHTML = '';
+
+            try {
+                const resp = await fetch('/api/offre/' + offreId + '/screen', { method: 'POST' });
+                const data = await resp.json();
+                if (data.success) {
+                    location.reload();
+                } else {
+                    errDiv.innerHTML = '<div class="error-msg">' + (data.error || 'Erreur inconnue') + '</div>';
+                    btn.disabled = false;
+                    btn.innerHTML = '🔍 Screener cette offre';
+                }
+            } catch (e) {
+                errDiv.innerHTML = '<div class="error-msg">Erreur réseau: ' + e.message + '</div>';
+                btn.disabled = false;
+                btn.innerHTML = '🔍 Screener cette offre';
+            }
+        }
+
+        async function generateCV() {
+            const btn = document.getElementById('cvBtn');
+            const resultDiv = document.getElementById('cvResult');
+            const errDiv = document.getElementById('cvError');
+            btn.disabled = true;
+            btn.innerHTML = 'Génération en cours... <span class="loading"></span>';
+            errDiv.innerHTML = '';
+            resultDiv.innerHTML = '';
+
+            try {
+                const resp = await fetch('/api/offre/' + offreId + '/generate-cv', { method: 'POST' });
+                const data = await resp.json();
+                if (data.success) {
+                    location.reload();
+                } else {
+                    errDiv.innerHTML = '<div class="error-msg">' + (data.error || 'Erreur inconnue') + '</div>';
+                    btn.disabled = false;
+                    btn.innerHTML = 'Générer CV';
+                }
+            } catch (e) {
+                errDiv.innerHTML = '<div class="error-msg">Erreur réseau: ' + e.message + '</div>';
+                btn.disabled = false;
+                btn.innerHTML = 'Générer CV';
+            }
+        }
+
+        async function generateLettre() {
+            const btn = document.getElementById('lettreBtn');
+            const resultDiv = document.getElementById('lettreResult');
+            const errDiv = document.getElementById('lettreError');
+            btn.disabled = true;
+            btn.innerHTML = 'Génération en cours... <span class="loading"></span>';
+            errDiv.innerHTML = '';
+            resultDiv.innerHTML = '';
+
+            try {
+                const resp = await fetch('/api/offre/' + offreId + '/generate-lettre', { method: 'POST' });
+                const data = await resp.json();
+                if (data.success) {
+                    location.reload();
+                } else {
+                    errDiv.innerHTML = '<div class="error-msg">' + (data.error || 'Erreur inconnue') + '</div>';
+                    btn.disabled = false;
+                    btn.innerHTML = 'Générer Lettre de Motivation';
+                }
+            } catch (e) {
+                errDiv.innerHTML = '<div class="error-msg">Erreur réseau: ' + e.message + '</div>';
+                btn.disabled = false;
+                btn.innerHTML = 'Générer Lettre de Motivation';
+            }
+        }
+
+        function copyLatex(elementId) {
+            const el = document.getElementById(elementId);
+            navigator.clipboard.writeText(el.textContent).then(() => {
+                const btn = el.parentElement.querySelector('.copy-btn');
+                btn.textContent = '✅ Copié !';
+                setTimeout(() => { btn.textContent = '📋 Copier'; }, 2000);
+            });
         }
     </script>
 </body>

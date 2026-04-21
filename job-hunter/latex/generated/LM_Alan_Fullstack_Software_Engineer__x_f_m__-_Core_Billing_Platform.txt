@@ -1,0 +1,26 @@
+Abderrazak Seghir  
+[Votre adresse]  
+[Votre téléphone]  
+[Votre email]  
+[Date]  
+
+À l’attention de l’équipe de recrutement  
+Alan  
+
+Objet : Candidature au poste de Fullstack Software Engineer pour la Core Billing Platform  
+
+Madame, Monsieur,
+
+Passionné par le développement de solutions logicielles innovantes et engagé dans la transformation numérique, je souhaite postuler au poste de Fullstack Software Engineer au sein d’Alan. Je suis convaincu que mes compétences en développement Full Stack et ma formation en Master 2 MIAGE-SID me permettent de contribuer efficacement à la mission d'Alan de redéfinir la santé pour chacun.
+
+Actuellement en alternance chez Afludia en tant que Développeur Full Stack, j’ai acquis une solide expérience en concevant des applications robustes utilisant .NET, C#, Blazor et Docker. Mes missions m'ont amené à travailler sur des infrastructures microservices avec une approche basée sur l'Agilité, ce qui correspond à votre recherche d'un candidat capable de naviguer dans des logiques métier complexes. Lors de mon stage chez Solutions Développement Informatique, j'ai pu développer des compétences en intégration d'APIs et en gestion de bases de données avec PostgreSQL, ce qui serait essentiel pour soutenir le cœur de votre plateforme de facturation.
+
+Je suis particulièrement attiré par le défi de construire un moteur de facturation capable de traiter des milliers de transactions avec précision et fiabilité. La possibilité de travailler sur des systèmes distribués et d’influencer la conception et l'architecture de ces plateformes résonne avec ma passion pour l’ingénierie logicielle de qualité. Je crois fermement que la transparence radicale et la responsabilité collective, valeurs que vous prônez chez Alan, sont des éléments clés pour atteindre l'excellence opérationnelle.
+
+Rejoindre une entreprise pionnière dans la santé digitale, qui place ses membres au cœur de ses préoccupations, est pour moi une opportunité unique. Je suis enthousiaste à l'idée de contribuer à la création de systèmes qui amélioreront l’expérience santé de millions de personnes tout en apportant une valeur ajoutée aux entreprises.
+
+Je vous remercie pour l’attention portée à ma candidature. Je serais ravi de discuter plus en détail lors d’un entretien de la façon dont je peux participer à votre mission.
+
+Cordialement,
+
+Abderrazak Seghir

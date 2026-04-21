@@ -185,7 +185,7 @@ def phase4_dashboard():
     stats = get_stats()
     logger.info("Stats actuelles : %s", stats)
 
-    from dashboard.app import app
+    from api.index import app
     logger.info("Dashboard démarré sur http://localhost:5000")
     app.run(debug=True, port=5000, use_reloader=False)
 

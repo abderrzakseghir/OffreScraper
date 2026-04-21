@@ -1,0 +1,22 @@
+Abderrazak Seghir  
+[Votre adresse]  
+[Votre numéro de téléphone]  
+[Votre adresse e-mail]  
+[Date]  
+
+Service de Recrutement  
+EDL  
+[Adresse de l'entreprise]  
+
+Madame, Monsieur,
+
+Passionné par le développement logiciel et en quête de nouveaux défis dans le secteur de la santé, je souhaite vous proposer ma candidature pour le poste de Développeur Full Stack au sein de votre équipe R&D. Actuellement étudiant en Master 2 MIAGE-SID, avec une spécialisation en développement, j'ai acquis des compétences solides en C#, .NET, PostgreSQL et React, qui correspondent parfaitement aux exigences de votre offre.
+
+Mon expérience en tant que Développeur Full Stack lors de mon alternance chez Afludia, où j'ai participé à la création de solutions innovantes, ainsi que mon stage chez Solutions Développement Informatique, m'ont permis de maîtriser l'ensemble du cycle de développement. J'ai conçu et développé des applications web performantes, tout en intégrant des modules fonctionnels, en assurant leur mise en production et leur suivi. Ces expériences m'ont également appris à travailler en étroite collaboration avec des équipes dans un cadre agile, à faire preuve d'autonomie et à être force de proposition pour des améliorations techniques.
+
+Rejoindre EDL, une entreprise reconnue pour ses solutions innovantes dans le domaine de la santé, représente pour moi une opportunité unique de contribuer à des projets à forte valeur ajoutée. Votre engagement à anticiper les évolutions technologiques et réglementaires, ainsi que votre volonté de fournir des applications robustes et fiables, résonnent profondément avec mes aspirations professionnelles. J'ai à cœur d'apporter ma créativité et mon esprit d'initiative à votre équipe, tout en continuant à me former dans un environnement stimulant.
+
+Convaincu que mes compétences techniques et ma passion pour l'innovation dans le secteur de la e-santé peuvent être un atout pour EDL, je serais ravi de discuter plus amplement de ma candidature lors d'un entretien. Je vous remercie pour l’attention portée à cette lettre et espère avoir l'opportunité de contribuer à l’essor d'EDL.
+
+Cordialement,  
+Abderrazak Seghir

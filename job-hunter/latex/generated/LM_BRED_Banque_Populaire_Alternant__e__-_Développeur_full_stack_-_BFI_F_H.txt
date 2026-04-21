@@ -1,0 +1,26 @@
+Abderrazak Seghir  
+[Adresse]  
+[Téléphone]  
+[Email]  
+[Date]  
+
+BRED Banque Populaire  
+[Adresse de l'entreprise]  
+
+Objet : Candidature pour le poste d'alternant Développeur Full Stack  
+
+Madame, Monsieur,
+
+Actuellement étudiant en Master 2 MIAGE-SID et passionné par le développement logiciel, je souhaite vous proposer ma candidature pour le poste d'alternant Développeur Full Stack au sein de la BRED Banque Populaire. Votre engagement en faveur du développement durable et de l'accompagnement des territoires français résonne profondément avec mes valeurs personnelles.
+
+Mon parcours, riche d'expériences pratiques, m’a permis d’acquérir des compétences solides en développement, tant côté client que serveur. En tant que développeur Full Stack en alternance chez Afludia, j'ai eu l'opportunité de participer à des projets variés, utilisant des technologies telles que .NET, C# ainsi que des microservices pour améliorer l'expérience utilisateur. Mon stage récent chez Solutions Développement Informatique m'a également permis de renforcer mes connaissances en Python, notamment pour la création de scripts d'automatisation.
+
+Vous recherchez un étudiant doté d'une bonne maîtrise des langages C#, Angular et Python ; je me sens parfaitement en phase avec vos attentes. Mon expérience avec l’optimisation d’interfaces utilisateur en Angular et le développement de solutions logicielles m'a permis de cultiver un esprit analytique et une rigueur qui, je l’espère, seront des atouts pour votre équipe. J’apprécie particulièrement la collaboration en équipe et je m’efforce toujours de poser des questions pertinentes pour mieux comprendre les besoins des utilisateurs.
+
+En intégrant votre équipe, je souhaite contribuer au développement et à la maintenance d’applications qui répondent à des enjeux réels, tout en continuant à apprendre au contact de professionnels passionnés. Je suis convaincu que cette expérience sera enrichissante tant sur le plan professionnel que personnel.
+
+Je vous remercie pour l'attention portée à ma candidature et reste à votre disposition pour un entretien, où je pourrais vous détailler mes motivations et mon parcours.
+
+Cordialement,
+
+Abderrazak Seghir

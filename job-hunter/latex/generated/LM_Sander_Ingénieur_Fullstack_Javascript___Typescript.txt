@@ -1,0 +1,26 @@
+Abderrazak Seghir  
+[Adresse]  
+[Téléphone]  
+[Email]  
+[Date]  
+
+Sander  
+[Adresse de l'entreprise]  
+
+Objet : Candidature au poste d'Ingénieur Fullstack Javascript / Typescript
+
+Madame, Monsieur,
+
+Passionné par le développement web et les technologies innovantes, je me permets de vous adresser ma candidature pour le poste d'Ingénieur Fullstack Javascript / Typescript au sein de votre entreprise, Sander. Votre engagement envers l'innovation et votre réputation en matière de solutions logicielles performantes m'inspirent tout particulièrement.
+
+Actuellement étudiant en Master 2 MIAGE-SID avec une spécialisation en développement, j'ai eu l'opportunité d'acquérir des compétences solides qui correspondent parfaitement aux exigences de votre offre. Lors de mon alternance chez Afludia, j'ai contribué au développement d'applications web en utilisant JavaScript et React, où j'ai pu mettre en pratique mes connaissances en front-end tout en intégrant des API pour assurer une communication fluide entre les différents services. Ce projet m’a permis de collaborer avec une équipe agile, renforçant ainsi mes compétences en méthodologie Scrum.
+
+Mon stage chez Solutions Développement Informatique a également été enrichissant, où j’ai participé à la création de microservices, me familiarisant davantage avec les architectures modernes. En utilisant des technologies comme Docker et RabbitMQ, j'ai appris à concevoir des solutions scalables et performantes. Mes solides notions de base de données avec PostgreSQL et SQL Server complètent mon profil technique.
+
+Sander, réputée pour son expertise en développement logiciel, me semble le laboratoire idéal pour approfondir mes compétences en environnement Javascript et Typescript. J’apprécierais sincèrement d’apporter ma créativité et mon dynamisme à votre équipe, tout en continuant à apprendre et à évoluer dans un cadre stimulant.
+
+Je suis enthousiaste à l'idée de discuter de ma candidature plus en détail et de partager avec vous mes projets et idées. Je vous remercie de l’attention portée à ma candidature et j'espère avoir l'occasion de contribuer aux projets innovants de Sander.
+
+Dans l'attente de votre retour, je vous prie d’agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+Abderrazak Seghir

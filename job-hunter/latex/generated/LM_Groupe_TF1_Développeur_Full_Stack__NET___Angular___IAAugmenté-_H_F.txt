@@ -1,0 +1,19 @@
+Abderrazak Seghir  
+[Votre adresse]  
+[Téléphone]  
+[Email]  
+[Date]  
+
+Monsieur/Madame,  
+
+Passionné par le développement et convaincu que les solutions technologiques peuvent transformer notre quotidien, je vous soumets ma candidature pour le poste de Développeur Full Stack .NET / Angular / IA-Augmenté au sein du Groupe TF1. Votre mission d’accompagner des projets ambitieux et innovants résonne avec mes aspirations professionnelles, et je serais ravi de contribuer à cette dynamique au sein de votre équipe.
+
+Actuellement étudiant en Master 2 MIAGE-SID et fort d’une expérience en alternance en tant que Développeur Full Stack chez Afludia, j'ai acquis une solide expertise en .NET et C#. Au cours de cette mission, j’ai développé des applications robustes et performantes, en mettant l'accent sur la qualité du code et les bonnes pratiques de développement. Mon passage en stage chez Solutions Développement Informatique m’a également permis de participer à des projets variés, où j'ai utilisé des outils tels que Docker et PostgreSQL pour gérer efficacement les données et le déploiement des applications. Mon expérience en Agile/Scrum m’a également appris à collaborer de manière proactive au sein d’une équipe pluridisciplinaire.
+
+Je suis particulièrement motivé par l’opportunité de rejoindre le pôle Produits Publicitaires de votre Groupe, car je crois fermement que les innovations technologiques sont essentielles pour optimiser les relations clientes et maximiser l'impact des campagnes publicitaires. L'utilisation de l’IA pour améliorer les processus et développer des fonctionnalités performantes et maintenables est un domaine qui m’enthousiasme tout particulièrement. Je suis confiant que mes compétences en développement Full Stack et ma connaissance des technologies de cloud, telles qu’AWS et Azure, seraient des atouts précieux pour votre équipe.
+
+Je serais honoré de pouvoir mettre mon savoir-faire au service du Groupe TF1 et de contribuer aux évolutions de vos projets. Je reste à votre disposition pour échanger davantage sur mes motivations et mes expériences lors d'un entretien.  
+
+Je vous remercie pour votre attention et je vous prie d’agréer, Monsieur/Madame, l’expression de mes salutations distinguées.  
+
+Abderrazak Seghir

@@ -1,0 +1,26 @@
+Abderrazak Seghir  
+[Votre Adresse]  
+[Votre Email]  
+[Votre Numéro de Téléphone]  
+[Date]  
+
+Alan  
+[Adresse de l'entreprise]  
+
+Objet : Candidature au poste de Full-stack Software Engineer - AI Developer Tools  
+
+Madame, Monsieur,
+
+Passionné par les technologies innovantes et actuellement étudiant en Master 2 MIAGE-SID, je suis enthousiaste à l'idée de poser ma candidature pour le poste de Full-stack Software Engineer chez Alan. Votre engagement à améliorer l'accès aux soins grâce à des outils d'intelligence artificielle résonne profondément avec mes aspirations professionnelles et personnelles.
+
+Au cours de mes expériences récentes en tant que Développeur Full Stack, notamment lors de mon alternance chez Afludia et de mon stage chez Solutions Développement Informatique, j'ai eu l'occasion de perfectionner mes compétences en développement .NET et C#, associées à une utilisation intensive de JavaScript et React pour construire des interfaces utilisateurs modernes et performantes. Mon travail sur des architectures basées sur des microservices m'a également permis de me familiariser avec Docker et d'améliorer la scalabilité et la maintenabilité des applications.
+
+J'ai toujours été attiré par les solutions qui allient technologie et impact social. Votre entreprise, en tant qu'innovateur dans le domaine de l'assurance santé, offre une perspective unique qui me motive à contribuer de manière significative à vos projets. Je suis particulièrement impressionné par votre volonté de rendre la technologie accessible et efficace, et je suis convaincu que mes compétences en développement et ma connaissance des pratiques Agile/Scrum peuvent apporter une valeur ajoutée à votre équipe.
+
+Intégrer Alan serait pour moi une chance exceptionnelle de mettre en œuvre mes compétences dans un environnement stimulant. Je suis impatient de discuter de la manière dont je pourrais contribuer à vos projets et participer à la réalisation de votre vision.
+
+Je vous remercie par avance pour l'attention portée à ma candidature. Je reste à votre disposition pour un entretien afin d'échanger plus en détail sur ma motivation et mes compétences.
+
+Cordialement,
+
+Abderrazak Seghir

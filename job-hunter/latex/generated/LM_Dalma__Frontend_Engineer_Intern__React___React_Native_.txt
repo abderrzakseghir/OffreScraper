@@ -1,0 +1,26 @@
+Abderrazak Seghir  
+[Votre adresse]  
+[Votre ville, code postal]  
+[Votre numéro de téléphone]  
+[Votre adresse e-mail]  
+[Date]  
+
+Mario et Axel  
+Dalma  
+
+Objet : Candidature pour le poste de Frontend Engineer Intern
+
+Bonjour Mario et Axel,
+
+Fort de mon expérience en développement Full Stack et actuellement étudiant en Master 2 MIAGE-SID, je suis particulièrement enthousiaste à l’idée de postuler pour le poste de Frontend Engineer Intern au sein de Dalma. La perspective de rejoindre une équipe senior où la curiosité et l’apprentissage au contact d’experts sont valorisés me motive énormément.
+
+Au cours de mon alternance chez Afludia et mon stage chez Solutions Développement Informatique, j’ai eu l’opportunité de travailler sur des projets en React et JavaScript, ce qui m’a permis d’acquérir une solide compréhension des meilleures pratiques en développement frontend ainsi que des compétences en matière d'UX. Je suis passionné par la conception d’interfaces utilisateur intuitives et fonctionnelles, et je sais qu’un détail non négligeable peut avoir un impact significatif sur l’expérience utilisateur. Mon sens de l’observation et ma capacité à poser les bonnes questions m’ont aidé à identifier et corriger des points d’amélioration dans les projets sur lesquels j’ai travaillé.
+
+Intégrer Dalma représente pour moi une occasion unique d’évoluer dans un environnement qui valorise la qualité technique et la responsabilité individuelle. J’apprécie particulièrement votre approche des cycles de développement courts et agiles, et je suis impatient d’apprendre et de contribuer activement à des tâches concrètes, notamment en travaillant sur les flows de souscription et l’application mobile.
+
+En plus de mes compétences en React, je suis motivé par l’idée d’approfondir mes connaissances en TypeScript et de comprendre davantage la logique d’API REST, ce qui me permettra d’avoir un impact réel sur votre produit et d’évoluer au sein de votre équipe. Je suis convaincu que mon enthousiasme, ma détermination à apprendre et ma capacité à collaborer efficacement seront des atouts précieux pour Dalma.
+
+Je vous remercie pour l’opportunité et je suis impatient de discuter de la manière dont je pourrais contribuer à votre équipe. 
+
+Cordialement,  
+Abderrazak Seghir

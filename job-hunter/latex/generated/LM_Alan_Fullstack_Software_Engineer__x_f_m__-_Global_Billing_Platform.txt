@@ -1,0 +1,22 @@
+Abderrazak Seghir  
+[Votre adresse]  
+[Votre ville, code postal]  
+[Votre email]  
+[Votre numéro de téléphone]  
+[Date]  
+
+À l’attention de l’équipe de recrutement,  
+
+Je suis ravi de soumettre ma candidature pour le poste de Fullstack Software Engineer au sein de la plateforme de facturation d'Alan. En tant qu'étudiant en Master 2 MIAGE-SID, je cumule déjà une expérience significative en tant que Développeur Full Stack, grâce à mes missions en alternance et en stage, où j’ai eu l’opportunité de travailler sur des projets variés utilisant des technologies telles que React, PostgreSQL et Python. 
+
+Au cours de mon alternance chez Afludia, j'ai été impliqué dans le développement d'applications web modulaires en utilisant .NET et Blazor, ce qui m'a permis de renforcer mes compétences en architecture logicielle et en conception de systèmes fiables. Mon stage chez Solutions Développement Informatique m’a offert la chance de développer des microservices avec des pipelines CI/CD, favorisant une intégration continue et la mise en œuvre de meilleures pratiques de codage. Ces expériences m'ont permis de comprendre les défis techniques liés à la gestion de systèmes à grande échelle, en particulier en ce qui concerne l'automatisation des workflows et la gestion des données.
+
+Je suis particulièrement enthousiaste à l'idée de rejoindre Alan car votre mission de transformer le secteur de la santé en un système plus accessible, tout en mettant l'accent sur la prévention, résonne profondément avec mes valeurs personnelles et professionnelles. Je suis convaincu que mon engagement envers la qualité du produit, ma capacité à travailler en équipe et ma compréhension des besoins métiers me permettront de contribuer efficacement à l'équipe, et d'aider à construire un moteur de facturation qui simplifie les processus complexes, tout en offrant une expérience utilisateur impeccable.
+
+En somme, je serais honoré de mettre mes compétences en React, PostgreSQL, et Python au service d'Alan et de participer à la construction d'une plateforme qui impacte positivement des millions de vies. Je serais ravi de discuter plus avant de ma candidature lors d'un entretien. 
+
+Je vous remercie pour votre temps et votre considération.  
+
+Cordialement,  
+
+Abderrazak Seghir
