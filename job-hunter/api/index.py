@@ -34,6 +34,15 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__, template_folder=str(Path(__file__).resolve().parent.parent / "dashboard" / "templates"))
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "job-hunter-secret-key-change-me")
 
+# Proper session cookie config for production (HTTPS on Vercel)
+_on_vercel = os.environ.get("VERCEL") == "1"
+app.config.update(
+    SESSION_COOKIE_SECURE=_on_vercel,
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE="Lax",
+    PERMANENT_SESSION_LIFETIME=365 * 24 * 3600,
+)
+
 # ──────────────────── AUTH ────────────────────
 
 CODES_FILE = Path(__file__).resolve().parent.parent / "codes.json"
