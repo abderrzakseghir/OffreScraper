@@ -4,5 +4,3 @@ dockerfilePath = "./Dockerfile"
 
 [deploy]
 startCommand = "gunicorn --bind 0.0.0.0:$PORT --timeout 120 --workers 1 --threads 4 job-hunter.api.index:app"
-restartPolicyType = "on-failure"
-restartPolicyMaxRetries = 3

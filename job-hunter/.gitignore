@@ -18,6 +18,9 @@ env/
 db/*.db
 db/*.db-journal
 
+# Stockage local Vercel Blob (contient des clés API)
+_local_blob/
+
 # LaTeX generated
 latex/generated/*.tex
 latex/generated/*.pdf
