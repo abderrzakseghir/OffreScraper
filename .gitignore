@@ -3,3 +3,9 @@ job-hunter/config.yaml
 *.db
 venv/
 latex/generated/
+
+# Next.js
+job-hunter/web/.next/
+job-hunter/web/node_modules/
+job-hunter/web/data/
+job-hunter/web/.env.local
